@@ -1,0 +1,106 @@
+
+.circle,
+.shape,
+.value {
+    vertical-align: middle
+}
+
+.info,
+.legend {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0)
+}
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+#map,
+body,
+html {
+    height: 100%
+}
+
+.evenrowcol {
+    background-color: #f6f6f6
+}
+
+.legend {
+    padding: 6px 8px;
+    font: 14px/1.4 Arial, Helvetica, sans-serif;
+    background: #fff;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    line-height: 2.5em;
+    color: #555
+}
+
+.circle,
+.legend table,
+.legend td,
+.value {
+    border: none
+}
+
+.legend i {
+    width: 1.5em;
+    height: 2.5em;
+    float: left;
+    margin-right: .4em;
+    opacity: 1
+}
+
+.value {
+    padding: 0 0 0 8px;
+    text-align: left
+}
+
+.circle,
+.mrkl,
+.mrkm,
+.mrks,
+.shape {
+    padding: 0;
+    text-align: center
+}
+
+.ln {
+    stroke: #03f;
+    stroke-width: 3;
+    stroke-opacity: .5;
+    stroke-linecap: round
+}
+
+.plgn {
+    fill: #03f;
+    fill-opacity: .5;
+    stroke: #03f;
+    stroke-width: 3;
+    stroke-opacity: .5;
+    stroke-linejoin: round
+}
+
+.mrks {
+    height: 30px
+}
+
+.mrkm {
+    height: 40px
+}
+
+.mrkl {
+    height: 52px
+}
+
+.info {
+    padding: 7px 9px;
+    font: 16px/1.7 Arial, Helvetica, sans-serif;
+    background: #fff;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777
+}
