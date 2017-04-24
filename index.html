@@ -3,21 +3,24 @@
    <head>
     <meta charset="utf-8">
   </head>
- <style> 
-    body {
-    background-color:#FFE698;
-    }
+ <style>
+ body, html {
+     margin: 0; padding: 0; height: 100%; overflow: hidden; background-color:#FFE698;
+ }
     h1 {
        text-align:center;
        color:#2F5597;
     }
-    iframe {
-       float:center;
-    }
+    #content
+                {
+                    position:center;
+                }
     </style>
 <body>
    <h1>
  <strong style=" font-size:30px; font-family:verdana;">Restraint And Seclusion Map</strong>
    </h1>
-   <iframe src="map.html" frameborder=0 height=500em width=80% id="myFrame" ></iframe>
+   <div id="content">
+   <iframe src="map.html" frameborder=0 height=500em width="100%" id="myFrame"></iframe>
+ </div>
 </body>

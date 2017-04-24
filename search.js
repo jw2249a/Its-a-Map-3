@@ -13,7 +13,7 @@ searchControl.on('search:locationfound', function(e) {
 
   //console.log('search:locationfound', );
   //map.removeLayer(this._markerSearch)
-  e.layer.setStyle({color: '#3f0'});
+  e.layer.setStyle({color: 'yellow'});
   if(e.layer._popup)
     e.layer.openPopup();
 }).on('search:collapsed', function(e) {

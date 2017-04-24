@@ -1,7 +1,7 @@
 var map = L.map('map', {
-  minZoom: 7,
-  maxZoom: 8,
-}).setView([38.9072, -77.0369], 7);
+  minZoom: 6,
+  maxZoom: 9,
+}).setView([38.9072, -77.0369], 7.5);
 
 // base layer
 var baseMaps = {};
@@ -13,13 +13,18 @@ baseMaps["OpenStreetMap"] = baseMap;
 
 // popup
 function onEachFeature(feature, layer) {
-    if (feature.properties && feature.properties["NCESID"] && feature.properties["NAME"]) {
-        layer.bindPopup(
-            "<table>" +
-            "<tr class='oddrowcol'><td>Name: </td><td>" + feature.properties["NAME"] + "</td></tr>" +
-            "<tr class='evenrowcol'><td>NCESID: </td><td>" + feature.properties["NCESID"] + "</td></tr>" +
-            "</table>"
-        );
+    if (feature.properties && feature.properties["NCESID"]) {
+        layer.on('mouseover', function (e) {
+          var popup = L.popup({closeButton:false})
+          .setLatLng(e.latlng)
+          .setContent("<table>" +
+          "<tr class='oddrowcol'><td><b>Name: </b></td><td>" + feature.properties["NAME"] + "</td></tr>" +
+          "</table>")
+          .openOn(map);
+        });
+        layer.on('mouseout', function (e) {
+            this.closePopup();
+        });
 
     }
 
@@ -44,7 +49,7 @@ function style1(feature) {
     return {
         "fillColor": getValue1(feature.properties["PrScRSR"]),
         "color": "#FFFFFF",
-        "weight": .85,
+        "weight": 2,
         "opacity": 1,
         "fillOpacity": 1
     };
