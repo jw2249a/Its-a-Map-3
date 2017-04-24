@@ -35,8 +35,8 @@ function getValue1(x) {
         x >= "e" ? "#FEB24C" :
         x >= "d" ? "#FED976" :
         x >= "c" ? "#FFEDA0" :
-        x >= "b" ? "#D2F3FA" :
-        x == "a" ? "#6E92C8" :
+        x >= "b" ? "#C7F8B6" :
+        x == "a" ? "#D2F3FA" :
         "";
 }
 
