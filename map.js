@@ -1,7 +1,7 @@
 var map = L.map('map', {
   minZoom: 7,
   maxZoom: 8,
-}).setView([38.9072, 77.0369], 7);
+}).setView([38.9072, -77.0369], 7);
 
 // base layer
 var baseMaps = {};
