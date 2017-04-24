@@ -1,5 +1,5 @@
 var map = L.map('map', {
-  minZoom: 6,
+  minZoom: 6.5,
   maxZoom: 8,
 }).setView([34.705, -95.3900], 5);
 
@@ -44,7 +44,7 @@ function style1(feature) {
     return {
         "fillColor": getValue1(feature.properties["PrScRSR"]),
         "color": "#FFFFFF",
-        "weight": .8,
+        "weight": .85,
         "opacity": 1,
         "fillOpacity": 1
     };
